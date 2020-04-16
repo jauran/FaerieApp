@@ -11,7 +11,8 @@ android {
         versionCode 1
 		//versionName "1.0"//20200413位移说话
         //versionName "1.1"//20200415添加背景
-		versionName "1.2"//20200415添加小屋，改进动画
+		//versionName "1.2"//20200415添加小屋，改进动画
+		versionName "1.3"//20200417添加符文，互动动画，心情说话
     }
     buildTypes {
         release {

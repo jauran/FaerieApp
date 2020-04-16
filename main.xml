@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<FrameLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
@@ -8,12 +8,12 @@
 
 	<ImageView
 		android:src="@drawable/ic_launcher"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
 		android:onClick="onClickImageView1"
 		android:id="@+id/mainImageView1"
-		android:layout_marginLeft="30dp"
-		android:layout_marginTop="80dp"/>
+		android:layout_marginLeft="90dp"
+		android:layout_marginTop="270dp"/>
 
 	<TextView
 		android:text="@string/hello_world"
@@ -21,7 +21,7 @@
 		android:layout_height="wrap_content"
 		android:id="@+id/mainTextView1"
 		android:layout_marginTop="100dp"
-		android:layout_marginLeft="50dp"
+		android:layout_marginLeft="100dp"
 		android:layout_alignLeft="@id/mainImageView1"/>
 
 	<ImageView
@@ -29,10 +29,25 @@
 		android:layout_width="100dp"
 		android:layout_height="100dp"
 		android:id="@+id/mainImageView2"
-		android:layout_alignTop="@id/mainImageView1"
-		android:layout_marginTop="70dp"
-		android:layout_marginLeft="100dp"
-		android:onClick="onClickImageView2"/>
+		android:onClick="onClickImageView2"
+		android:layout_marginTop="360dp"
+		android:layout_marginLeft="180dp"/>
 
-</RelativeLayout>
+	<ImageView
+		android:src="@drawable/image_3"
+		android:layout_width="20dp"
+		android:layout_height="20dp"
+		android:layout_marginLeft="115dp"
+		android:layout_marginTop="100dp"
+		android:id="@+id/mainImageView3"/>
+
+	<ImageView
+		android:src="@drawable/image_4"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:onClick="onClickImageView4"
+		android:visibility="invisible"
+		android:id="@+id/mainImageView4"/>
+
+</FrameLayout>
 
