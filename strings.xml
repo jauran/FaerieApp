@@ -3,5 +3,23 @@
 
     <string name="app_name">安卓仙界</string>
     <string name="hello_world"></string>
+	<string-array name="talk">
+		<item>如果你喜欢我，你就继续点点我</item>
+		<item>我有很多好玩的事情想告诉你</item>
+		<item>我这么可爱，你给我买一个可爱多吧</item>
+		<item>我不说话的时候，世界都安静了</item>
+		<item>你要我怎么做怎么说你才能爱我</item>
+		<item>你选择遗忘的，是我最不舍的</item>
+		<item>我有一个小屋，面朝大海，春暖花开</item>
+		<item>昨天刚刚和你告别，今天你又在这里</item>
+		<item>今夜我不关心人类</item>
+		<item>我觉得你看我时很远，你看云时很近</item>
+		<item>我每次说话，都看心情</item>
+		<item>我知道最好的礼物，是送你一片天空</item>
+		<item>请把我的歌，带回你的家</item>
+		<item>你不许点我这么快</item>
+		<item>假如生活欺骗了你，不要悲伤不要心急</item>
+		<item>我站在你面前，你却到不了我这里</item>
+	</string-array>
 
 </resources>
