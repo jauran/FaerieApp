@@ -5,6 +5,7 @@ import android.os.*;
 import android.view.*;
 import android.view.animation.*;
 import android.widget.*;
+import java.util.*;
 
 public class MainActivity extends Activity {
 	//private TextView TextView = null;
@@ -20,6 +21,9 @@ public class MainActivity extends Activity {
     }
 	public void onClickImageView1(View view) {
 		i = i + 1;
+		String[] talk = getResources().getStringArray(R.array.talk);
+		Random random =new Random();
+		int t=random.nextInt(talk.length);
 		if (i == 1) {
 			// This Java code shows a toast
 			Toast.makeText(this, "你好!\n我是赵然制作的第1个安卓小机器人^_^", Toast.LENGTH_LONG).show();
@@ -45,20 +49,20 @@ public class MainActivity extends Activity {
 			view.startAnimation(animation);
 			//TextView.setVisibility(TextView.INVISIBLE);
 		}
-		else if (i == 3) {
-			Toast.makeText(this, "如果你喜欢我，你就继续点点我～", Toast.LENGTH_SHORT).show();
+		else if (i == 20) {
+			Toast.makeText(this, "你是第" + i + "次点我了，都把我点饿了", Toast.LENGTH_LONG).show();
 		}
-		else if (i == 6) {
-			Toast.makeText(this, "我有很多好玩的事情想告诉你～", Toast.LENGTH_SHORT).show();
+		else if (i == 21) {
+			Toast.makeText(this, "你都点了我" + i + "次了，我想静静了", Toast.LENGTH_LONG).show();
 		}
-		else if (i == 10) {
-			Toast.makeText(this, "我这么可爱，你给我买一个可爱多吧～", Toast.LENGTH_SHORT).show();
+		else if (i == 100) {
+			Toast.makeText(this, "我去!你点了我" + i + "次，你想把我点坏了?", Toast.LENGTH_LONG).show();
 		}
-		else if (i == 15) {
-			Toast.makeText(this, "你都点了我" + i + "次了，我想静静了...", Toast.LENGTH_LONG).show();
+		else if (i % 10 == 0) {
+			Toast.makeText(this, "你是第" + i + "次点我了", Toast.LENGTH_SHORT).show();
 		}
-		else if (i <= 14) {
-			Toast.makeText(this, "你是第" + i + "次点我了～", Toast.LENGTH_SHORT).show();
+		else if (i <= 20) {
+			Toast.makeText(this, talk[t], Toast.LENGTH_SHORT).show();
 		}
 	}
 	public void onClickImageView2(View view) {
