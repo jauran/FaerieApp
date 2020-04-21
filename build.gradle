@@ -1,13 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.0"
+	//compileSdkVersion 21
+    compileSdkVersion 26//Oreo
+	//buildToolsVersion "21.1.0"
+    buildToolsVersion "26.0.0"//Oreo
 
     defaultConfig {
         applicationId "jauran.faerieapp"
-        minSdkVersion 14
-        targetSdkVersion 21
+        minSdkVersion 14//IceCream
+        //targetSdkVersion 21
+		targetSdkVersion 26//Oreo
         versionCode 1
 		//versionName "1.0"//20200413位移说话
         //versionName "1.1"//20200415添加背景
